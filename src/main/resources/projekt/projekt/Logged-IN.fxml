@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projekt.projekt.LoggedInCtrl">
+   <children>
+      <VBox prefHeight="400.0" prefWidth="260.0">
+         <children>
+            <ImageView fx:id="iv_logo" fitHeight="170.0" fitWidth="305.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@PD_Industries.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="b_inc" mnemonicParsing="false" prefHeight="94.0" prefWidth="263.0" text="Add income" />
+            <Button fx:id="b_spend" mnemonicParsing="false" prefHeight="66.0" prefWidth="263.0" text="Spendings" />
+            <Button fx:id="b_sum" mnemonicParsing="false" prefHeight="67.0" prefWidth="263.0" text="Summary" />
+            <Button fx:id="b_logout" mnemonicParsing="false" prefHeight="43.0" prefWidth="262.0" text="Log Out" />
+         </children>
+      </VBox>
+      <Label fx:id="l_welcome" layoutX="373.0" layoutY="14.0" prefHeight="25.0" prefWidth="134.0" text="Hello Patryk! ">
+         <font>
+            <Font name="Arial Unicode MS" size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
