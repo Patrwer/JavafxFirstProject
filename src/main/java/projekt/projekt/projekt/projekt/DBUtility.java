@@ -50,7 +50,7 @@ public class DBUtility extends LoggedInCtrl {
         ResultSet resultSet = null;
 
         try {
-            connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/k-w", "root", "werner22");
+            connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/k-w", "root", "null");
             psCheckuser = connection.prepareStatement("SELECT * FROM users WHERE username = ?");
             psCheckuser.setString(1, username);
             resultSet = psCheckuser.executeQuery();
